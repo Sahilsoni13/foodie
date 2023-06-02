@@ -1,0 +1,229 @@
+/* css reset */
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navbar:  logo and images */
+#logo{
+    margin: 2px 2px;
+    
+    
+}
+#logo img{
+    height: 100px;
+    width: 100px;
+    margin: 2px 2px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+/* Navbar: list styling */
+#navbar{
+  position: relative;
+
+}
+ #navbar ul{
+    display: flex;
+    font-family: 'Shantell Sans', cursive;;
+
+}
+#navbar::before{
+    content: '';
+    background-color: orangered;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 2px 2px;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+background-color: white;
+
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+
+}
+#home::before{
+    content: '';
+    position: absolute;
+    background: url(../img/bg2.jpg)
+    no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+  font-family:  'Josefin Sans', sans-serif;
+  
+  
+  
+
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family:  'Josefin Sans', sans-serif;
+    
+}
+/* servives section */
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid orange;
+    padding: 35px;
+    margin: 20px 6px;
+    border-radius: 28px;
+    background-color: rgb(247, 244, 244);
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+.box p{
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* our clients */
+#client-section{
+    height: 445px;
+
+}
+#client-section::before{
+    content: '';
+    position: absolute;
+    background: url('../img/bg1.jpg')
+    no-repeat center center/cover;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: .5;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client-item{
+    /* padding: 32px; */
+}
+#client img{
+    height: 100px;
+    padding: 25px;
+
+
+    
+}
+/* contact section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: '';
+    background: url("../img/contact.jpg")
+    no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+font-size: 3rem;
+padding: 12px;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 5px 20px;
+    margin: 12px;
+    border: 2px white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.center{
+    text-align: center;
+}
+

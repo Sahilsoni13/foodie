@@ -1,0 +1,57 @@
+/* css variables */
+
+
+/* navbar logo and images? */
+
+/* navbar */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 2px 5px;
+    padding-bottom: 5px;
+}
+/* navbar liststyling */
+
+/* home section */
+#home{
+    height: 280px;
+padding: 3px 8px;
+}
+#home::before{
+    height: 470px;
+}
+#home p{
+    font-size: 13px;
+    
+}
+
+/* services section */
+#services{
+    flex-direction: column;
+}
+#services .box{
+    padding: 15px;
+}
+#services .box img{
+    height: 100px;
+}
+
+/* our clients */
+#client{
+    overflow: hidden;
+}
+#client img{
+    height: 60px;
+}
+
+/* contact section */
+
+/* utility classes */
+.h-primary{
+font-size: 30px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+}
